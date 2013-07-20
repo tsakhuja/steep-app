@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TYSTimer.h"
 
-@interface TYSViewController : UIViewController
+@interface TYSViewController : UIViewController <TYSTimerDelegate>
+
+@property (nonatomic, readonly) BOOL isTimerRunning;
+
+- (IBAction)saveSettings:(id)sender;
+- (IBAction)dismissSettings:(id)sender;
+
+- (void)resetTimer;
+- (void)stopTimer;
+- (void)toggleTimerLabel;
 
 @end

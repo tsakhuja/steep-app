@@ -18,10 +18,46 @@
 		4E5B586216FA44D5002A36A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B586116FA44D5002A36A2 /* Default-568h@2x.png */; };
 		4E5B586516FA44D5002A36A2 /* TYSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B586416FA44D5002A36A2 /* TYSViewController.m */; };
 		4E5B586816FA44D5002A36A2 /* TYSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5B586616FA44D5002A36A2 /* TYSViewController.xib */; };
+		4E71FDEF170398C3002E4A71 /* TYSTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71FDEE170398C3002E4A71 /* TYSTimePickerView.m */; };
+		4E8475AB17151A7B000FE57E /* teacup_letterpress.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8475A917151A7B000FE57E /* teacup_letterpress.png */; };
+		4E8475AC17151A7B000FE57E /* teacup_letterpress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8475AA17151A7B000FE57E /* teacup_letterpress@2x.png */; };
+		4E8475AF171B1CA8000FE57E /* TYSTeaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8475AE171B1CA8000FE57E /* TYSTeaButton.m */; };
+		4E8475B2171B214B000FE57E /* TYSTimeStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8475B1171B214B000FE57E /* TYSTimeStringFormatter.m */; };
+		4E8FE73B17485A660034AB65 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8FE73A17485A660034AB65 /* CFNetwork.framework */; };
+		4E8FE73D17485A6D0034AB65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8FE73C17485A6D0034AB65 /* SystemConfiguration.framework */; };
+		4E8FE73F17485A780034AB65 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8FE73E17485A780034AB65 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4E8FE74117485AA60034AB65 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FE73717485A250034AB65 /* Appirater.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4EC70F211709FA4000E939EA /* TYSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC70F201709FA4000E939EA /* TYSTimer.m */; };
+		4EC70F23170D1EBE00E939EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC70F22170D1EBE00E939EA /* QuartzCore.framework */; };
+		4EC70F27170E19D300E939EA /* tea_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F26170E19D300E939EA /* tea_icon.png */; };
+		4EC70F29170E1A5C00E939EA /* tea_icon_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F28170E1A5C00E939EA /* tea_icon_empty.png */; };
+		4EC70F2B170E3C9100E939EA /* steep_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F2A170E3C9100E939EA /* steep_icon@2x.png */; };
+		4EC70F39170F404B00E939EA /* picker_iphone5_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F38170F404B00E939EA /* picker_iphone5_light@2x.png */; };
+		4EC70F3C17109D2900E939EA /* TYSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC70F3B17109D2900E939EA /* TYSButton.m */; };
+		4EC70F3E1710DA4200E939EA /* gray_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F3D1710DA4200E939EA /* gray_noise.png */; };
+		4EC70F401710DAEE00E939EA /* gray_noise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F3F1710DAED00E939EA /* gray_noise@2x.png */; };
+		4EC70F4A171113BE00E939EA /* picker_overlay-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F49171113BE00E939EA /* picker_overlay-568h@2x.png */; };
+		4EC70F4C171120FE00E939EA /* dark_gray_noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F4B171120FE00E939EA /* dark_gray_noise.png */; };
+		4EC70F4E1711215B00E939EA /* dark_gray_noise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F4D1711215B00E939EA /* dark_gray_noise@2x.png */; };
+		4EC70F511711E64200E939EA /* TYSPushButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC70F501711E64200E939EA /* TYSPushButton.m */; };
+		4EC70F541712248F00E939EA /* click_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F521712248F00E939EA /* click_down.mp3 */; };
+		4EC70F551712248F00E939EA /* click_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F531712248F00E939EA /* click_up.mp3 */; };
+		4EC70F5B1712253000E939EA /* TYSSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC70F5A1712253000E939EA /* TYSSoundEffect.m */; };
+		4EC70F5D171228CF00E939EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC70F5C171228CF00E939EA /* AudioToolbox.framework */; };
+		4EC70F601713326700E939EA /* teacup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F5E1713326700E939EA /* teacup.png */; };
+		4EC70F611713326700E939EA /* teacup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F5F1713326700E939EA /* teacup@2x.png */; };
+		4EC70F631713542100E939EA /* gray_cup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F621713542000E939EA /* gray_cup@2x.png */; };
+		4EC70F6A1714BA8200E939EA /* steep_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F681714BA8200E939EA /* steep_icon.png */; };
+		4EC70F6B1714BA8200E939EA /* steep_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC70F691714BA8200E939EA /* steep_icon@2x.png */; };
+		4EFD90EF16FAB0DD004262C5 /* TYSInfoBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD90EE16FAB0DD004262C5 /* TYSInfoBackViewController.m */; };
+		4EFD90F116FAB4A3004262C5 /* TYSInfoBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD90F016FAB4A3004262C5 /* TYSInfoBackView.xib */; };
+		4EFD90F516FB717B004262C5 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD90F416FB717B004262C5 /* settings.plist */; };
+		4EFD90F916FB7210004262C5 /* TYSSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD90F816FB7210004262C5 /* TYSSettingsManager.m */; };
+		4EFD90FB16FB76C7004262C5 /* TSPlistDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD90F316FB712B004262C5 /* TSPlistDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E5B584816FA44D3002A36A2 /* GreenTeaTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenTeaTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5B584816FA44D3002A36A2 /* Steep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5B584B16FA44D3002A36A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4E5B584D16FA44D4002A36A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4E5B584F16FA44D4002A36A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -37,6 +73,54 @@
 		4E5B586316FA44D5002A36A2 /* TYSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSViewController.h; sourceTree = "<group>"; };
 		4E5B586416FA44D5002A36A2 /* TYSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSViewController.m; sourceTree = "<group>"; };
 		4E5B586716FA44D5002A36A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TYSViewController.xib; sourceTree = "<group>"; };
+		4E71FDED170398C3002E4A71 /* TYSTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSTimePickerView.h; sourceTree = "<group>"; };
+		4E71FDEE170398C3002E4A71 /* TYSTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSTimePickerView.m; sourceTree = "<group>"; };
+		4E8475A917151A7B000FE57E /* teacup_letterpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacup_letterpress.png; sourceTree = "<group>"; };
+		4E8475AA17151A7B000FE57E /* teacup_letterpress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teacup_letterpress@2x.png"; sourceTree = "<group>"; };
+		4E8475AD171B1CA8000FE57E /* TYSTeaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSTeaButton.h; sourceTree = "<group>"; };
+		4E8475AE171B1CA8000FE57E /* TYSTeaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSTeaButton.m; sourceTree = "<group>"; };
+		4E8475B0171B214B000FE57E /* TYSTimeStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSTimeStringFormatter.h; sourceTree = "<group>"; };
+		4E8475B1171B214B000FE57E /* TYSTimeStringFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSTimeStringFormatter.m; sourceTree = "<group>"; };
+		4E8FE73617485A250034AB65 /* Appirater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		4E8FE73717485A250034AB65 /* Appirater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		4E8FE73817485A250034AB65 /* AppiraterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
+		4E8FE73A17485A660034AB65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4E8FE73C17485A6D0034AB65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4E8FE73E17485A780034AB65 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4EC70F1F1709FA4000E939EA /* TYSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSTimer.h; sourceTree = "<group>"; };
+		4EC70F201709FA4000E939EA /* TYSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSTimer.m; sourceTree = "<group>"; };
+		4EC70F22170D1EBE00E939EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4EC70F26170E19D300E939EA /* tea_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tea_icon.png; sourceTree = "<group>"; };
+		4EC70F28170E1A5C00E939EA /* tea_icon_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tea_icon_empty.png; sourceTree = "<group>"; };
+		4EC70F2A170E3C9100E939EA /* steep_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steep_icon@2x.png"; sourceTree = "<group>"; };
+		4EC70F38170F404B00E939EA /* picker_iphone5_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_iphone5_light@2x.png"; sourceTree = "<group>"; };
+		4EC70F3A17109D2800E939EA /* TYSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSButton.h; sourceTree = "<group>"; };
+		4EC70F3B17109D2900E939EA /* TYSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSButton.m; sourceTree = "<group>"; };
+		4EC70F3D1710DA4200E939EA /* gray_noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_noise.png; sourceTree = "<group>"; };
+		4EC70F3F1710DAED00E939EA /* gray_noise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray_noise@2x.png"; sourceTree = "<group>"; };
+		4EC70F49171113BE00E939EA /* picker_overlay-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picker_overlay-568h@2x.png"; sourceTree = "<group>"; };
+		4EC70F4B171120FE00E939EA /* dark_gray_noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_gray_noise.png; sourceTree = "<group>"; };
+		4EC70F4D1711215B00E939EA /* dark_gray_noise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark_gray_noise@2x.png"; sourceTree = "<group>"; };
+		4EC70F4F1711E64100E939EA /* TYSPushButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSPushButton.h; sourceTree = "<group>"; };
+		4EC70F501711E64200E939EA /* TYSPushButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSPushButton.m; sourceTree = "<group>"; };
+		4EC70F521712248F00E939EA /* click_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_down.mp3; sourceTree = "<group>"; };
+		4EC70F531712248F00E939EA /* click_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_up.mp3; sourceTree = "<group>"; };
+		4EC70F591712252F00E939EA /* TYSSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSSoundEffect.h; sourceTree = "<group>"; };
+		4EC70F5A1712253000E939EA /* TYSSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSSoundEffect.m; sourceTree = "<group>"; };
+		4EC70F5C171228CF00E939EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4EC70F5E1713326700E939EA /* teacup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacup.png; path = "../../../Mushroom Illustrations/teacup.png"; sourceTree = "<group>"; };
+		4EC70F5F1713326700E939EA /* teacup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teacup@2x.png"; path = "../../../Mushroom Illustrations/teacup@2x.png"; sourceTree = "<group>"; };
+		4EC70F621713542000E939EA /* gray_cup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gray_cup@2x.png"; path = "../../../Mushroom Illustrations/gray_cup@2x.png"; sourceTree = "<group>"; };
+		4EC70F681714BA8200E939EA /* steep_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steep_icon.png; sourceTree = "<group>"; };
+		4EC70F691714BA8200E939EA /* steep_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steep_icon@2x.png"; sourceTree = "<group>"; };
+		4EFD90ED16FAB0DD004262C5 /* TYSInfoBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSInfoBackViewController.h; sourceTree = "<group>"; };
+		4EFD90EE16FAB0DD004262C5 /* TYSInfoBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSInfoBackViewController.m; sourceTree = "<group>"; };
+		4EFD90F016FAB4A3004262C5 /* TYSInfoBackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYSInfoBackView.xib; sourceTree = "<group>"; };
+		4EFD90F216FB712B004262C5 /* TSPlistDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPlistDataController.h; sourceTree = "<group>"; };
+		4EFD90F316FB712B004262C5 /* TSPlistDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPlistDataController.m; sourceTree = "<group>"; };
+		4EFD90F416FB717B004262C5 /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		4EFD90F716FB7210004262C5 /* TYSSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSSettingsManager.h; sourceTree = "<group>"; };
+		4EFD90F816FB7210004262C5 /* TYSSettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSSettingsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +128,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8FE73F17485A780034AB65 /* StoreKit.framework in Frameworks */,
+				4E8FE73D17485A6D0034AB65 /* SystemConfiguration.framework in Frameworks */,
+				4E8FE73B17485A660034AB65 /* CFNetwork.framework in Frameworks */,
+				4EC70F5D171228CF00E939EA /* AudioToolbox.framework in Frameworks */,
+				4EC70F23170D1EBE00E939EA /* QuartzCore.framework in Frameworks */,
 				4E5B584C16FA44D4002A36A2 /* UIKit.framework in Frameworks */,
 				4E5B584E16FA44D4002A36A2 /* Foundation.framework in Frameworks */,
 				4E5B585016FA44D4002A36A2 /* CoreGraphics.framework in Frameworks */,
@@ -56,7 +145,17 @@
 		4E5B583F16FA44D1002A36A2 = {
 			isa = PBXGroup;
 			children = (
+				4E8FE73E17485A780034AB65 /* StoreKit.framework */,
+				4E8FE73C17485A6D0034AB65 /* SystemConfiguration.framework */,
+				4E8FE73A17485A660034AB65 /* CFNetwork.framework */,
+				4EC70F681714BA8200E939EA /* steep_icon.png */,
+				4EC70F691714BA8200E939EA /* steep_icon@2x.png */,
+				4EC70F5C171228CF00E939EA /* AudioToolbox.framework */,
+				4EC70F4D1711215B00E939EA /* dark_gray_noise@2x.png */,
+				4EC70F4B171120FE00E939EA /* dark_gray_noise.png */,
+				4EC70F22170D1EBE00E939EA /* QuartzCore.framework */,
 				4E5B585116FA44D4002A36A2 /* GreenTeaTimer */,
+				4EFD90F616FB7188004262C5 /* Resources */,
 				4E5B584A16FA44D3002A36A2 /* Frameworks */,
 				4E5B584916FA44D3002A36A2 /* Products */,
 			);
@@ -65,7 +164,7 @@
 		4E5B584916FA44D3002A36A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E5B584816FA44D3002A36A2 /* GreenTeaTimer.app */,
+				4E5B584816FA44D3002A36A2 /* Steep.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,8 +186,30 @@
 				4E5B585B16FA44D4002A36A2 /* TYSAppDelegate.m */,
 				4E5B586316FA44D5002A36A2 /* TYSViewController.h */,
 				4E5B586416FA44D5002A36A2 /* TYSViewController.m */,
+				4EFD90ED16FAB0DD004262C5 /* TYSInfoBackViewController.h */,
+				4EFD90EE16FAB0DD004262C5 /* TYSInfoBackViewController.m */,
+				4E71FDED170398C3002E4A71 /* TYSTimePickerView.h */,
+				4E71FDEE170398C3002E4A71 /* TYSTimePickerView.m */,
+				4EFD90F016FAB4A3004262C5 /* TYSInfoBackView.xib */,
+				4EC70F3A17109D2800E939EA /* TYSButton.h */,
+				4EC70F3B17109D2900E939EA /* TYSButton.m */,
+				4EC70F1F1709FA4000E939EA /* TYSTimer.h */,
+				4EC70F201709FA4000E939EA /* TYSTimer.m */,
 				4E5B586616FA44D5002A36A2 /* TYSViewController.xib */,
+				4EFD90F216FB712B004262C5 /* TSPlistDataController.h */,
+				4EFD90F316FB712B004262C5 /* TSPlistDataController.m */,
+				4EFD90F716FB7210004262C5 /* TYSSettingsManager.h */,
+				4EFD90F816FB7210004262C5 /* TYSSettingsManager.m */,
+				4EC70F4F1711E64100E939EA /* TYSPushButton.h */,
+				4EC70F501711E64200E939EA /* TYSPushButton.m */,
+				4E8475AD171B1CA8000FE57E /* TYSTeaButton.h */,
+				4E8475AE171B1CA8000FE57E /* TYSTeaButton.m */,
+				4E8475B0171B214B000FE57E /* TYSTimeStringFormatter.h */,
+				4E8475B1171B214B000FE57E /* TYSTimeStringFormatter.m */,
+				4E8FE73917485A310034AB65 /* Appirater */,
 				4E5B585216FA44D4002A36A2 /* Supporting Files */,
+				4EC70F591712252F00E939EA /* TYSSoundEffect.h */,
+				4EC70F5A1712253000E939EA /* TYSSoundEffect.m */,
 			);
 			path = GreenTeaTimer;
 			sourceTree = "<group>";
@@ -96,7 +217,21 @@
 		4E5B585216FA44D4002A36A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E8475A917151A7B000FE57E /* teacup_letterpress.png */,
+				4E8475AA17151A7B000FE57E /* teacup_letterpress@2x.png */,
+				4EC70F621713542000E939EA /* gray_cup@2x.png */,
+				4EC70F5E1713326700E939EA /* teacup.png */,
+				4EC70F5F1713326700E939EA /* teacup@2x.png */,
+				4EC70F521712248F00E939EA /* click_down.mp3 */,
+				4EC70F531712248F00E939EA /* click_up.mp3 */,
+				4EC70F49171113BE00E939EA /* picker_overlay-568h@2x.png */,
+				4EC70F3F1710DAED00E939EA /* gray_noise@2x.png */,
+				4EC70F3D1710DA4200E939EA /* gray_noise.png */,
+				4EC70F2A170E3C9100E939EA /* steep_icon@2x.png */,
+				4EC70F38170F404B00E939EA /* picker_iphone5_light@2x.png */,
+				4EC70F28170E1A5C00E939EA /* tea_icon_empty.png */,
 				4E5B585316FA44D4002A36A2 /* GreenTeaTimer-Info.plist */,
+				4EC70F26170E19D300E939EA /* tea_icon.png */,
 				4E5B585416FA44D4002A36A2 /* InfoPlist.strings */,
 				4E5B585716FA44D4002A36A2 /* main.m */,
 				4E5B585916FA44D4002A36A2 /* GreenTeaTimer-Prefix.pch */,
@@ -105,6 +240,25 @@
 				4E5B586116FA44D5002A36A2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E8FE73917485A310034AB65 /* Appirater */ = {
+			isa = PBXGroup;
+			children = (
+				4E8FE73617485A250034AB65 /* Appirater.h */,
+				4E8FE73717485A250034AB65 /* Appirater.m */,
+				4E8FE73817485A250034AB65 /* AppiraterDelegate.h */,
+			);
+			name = Appirater;
+			sourceTree = "<group>";
+		};
+		4EFD90F616FB7188004262C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD90F416FB717B004262C5 /* settings.plist */,
+			);
+			name = Resources;
+			path = GreenTeaTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +278,7 @@
 			);
 			name = GreenTeaTimer;
 			productName = GreenTeaTimer;
-			productReference = 4E5B584816FA44D3002A36A2 /* GreenTeaTimer.app */;
+			productReference = 4E5B584816FA44D3002A36A2 /* Steep.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,6 +318,26 @@
 				4E5B586016FA44D5002A36A2 /* Default@2x.png in Resources */,
 				4E5B586216FA44D5002A36A2 /* Default-568h@2x.png in Resources */,
 				4E5B586816FA44D5002A36A2 /* TYSViewController.xib in Resources */,
+				4EFD90F116FAB4A3004262C5 /* TYSInfoBackView.xib in Resources */,
+				4EFD90F516FB717B004262C5 /* settings.plist in Resources */,
+				4EC70F27170E19D300E939EA /* tea_icon.png in Resources */,
+				4EC70F29170E1A5C00E939EA /* tea_icon_empty.png in Resources */,
+				4EC70F2B170E3C9100E939EA /* steep_icon@2x.png in Resources */,
+				4EC70F39170F404B00E939EA /* picker_iphone5_light@2x.png in Resources */,
+				4EC70F3E1710DA4200E939EA /* gray_noise.png in Resources */,
+				4EC70F401710DAEE00E939EA /* gray_noise@2x.png in Resources */,
+				4EC70F4A171113BE00E939EA /* picker_overlay-568h@2x.png in Resources */,
+				4EC70F4C171120FE00E939EA /* dark_gray_noise.png in Resources */,
+				4EC70F4E1711215B00E939EA /* dark_gray_noise@2x.png in Resources */,
+				4EC70F541712248F00E939EA /* click_down.mp3 in Resources */,
+				4EC70F551712248F00E939EA /* click_up.mp3 in Resources */,
+				4EC70F601713326700E939EA /* teacup.png in Resources */,
+				4EC70F611713326700E939EA /* teacup@2x.png in Resources */,
+				4EC70F631713542100E939EA /* gray_cup@2x.png in Resources */,
+				4EC70F6A1714BA8200E939EA /* steep_icon.png in Resources */,
+				4EC70F6B1714BA8200E939EA /* steep_icon@2x.png in Resources */,
+				4E8475AB17151A7B000FE57E /* teacup_letterpress.png in Resources */,
+				4E8475AC17151A7B000FE57E /* teacup_letterpress@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +348,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8FE74117485AA60034AB65 /* Appirater.m in Sources */,
+				4EFD90FB16FB76C7004262C5 /* TSPlistDataController.m in Sources */,
 				4E5B585816FA44D4002A36A2 /* main.m in Sources */,
 				4E5B585C16FA44D4002A36A2 /* TYSAppDelegate.m in Sources */,
 				4E5B586516FA44D5002A36A2 /* TYSViewController.m in Sources */,
+				4EFD90EF16FAB0DD004262C5 /* TYSInfoBackViewController.m in Sources */,
+				4EFD90F916FB7210004262C5 /* TYSSettingsManager.m in Sources */,
+				4E71FDEF170398C3002E4A71 /* TYSTimePickerView.m in Sources */,
+				4EC70F211709FA4000E939EA /* TYSTimer.m in Sources */,
+				4EC70F3C17109D2900E939EA /* TYSButton.m in Sources */,
+				4EC70F511711E64200E939EA /* TYSPushButton.m in Sources */,
+				4EC70F5B1712253000E939EA /* TYSSoundEffect.m in Sources */,
+				4E8475AF171B1CA8000FE57E /* TYSTeaButton.m in Sources */,
+				4E8475B2171B214B000FE57E /* TYSTimeStringFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +449,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenTeaTimer/GreenTeaTimer-Prefix.pch";
 				INFOPLIST_FILE = "GreenTeaTimer/GreenTeaTimer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Steep;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -275,7 +461,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenTeaTimer/GreenTeaTimer-Prefix.pch";
 				INFOPLIST_FILE = "GreenTeaTimer/GreenTeaTimer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Steep;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -299,6 +486,7 @@
 				4E5B586D16FA44D5002A36A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
