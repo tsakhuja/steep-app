@@ -49,7 +49,6 @@ uint _timerDuration;
         TYSSettingsManager *settingsManager = [TYSSettingsManager sharedSettingsManager];
         self.settingsManager = settingsManager;
         
-//        TYSTimer *timer = [[TYSTimer alloc] initWithDuration:self.timerLength delegate:self];
         TYSTimer *timer = [TYSTimer sharedTimer];
         timer.delegate = self;
         timer.duration = self.settingsManager.currentDuration;
@@ -70,7 +69,7 @@ uint _timerDuration;
     
     [self drawTimer];
     [self drawTitleLabel];
-    [self drawTempLabel];
+    [self drawTimerDurationLabel];
     [self.timer reset];
     
 }
@@ -83,7 +82,6 @@ uint _timerDuration;
     [self.view addSubview:infoButton];
     [infoButton addTarget:self action:@selector(segueToSettings) forControlEvents:UIControlEventTouchUpInside];
     
-//    [self drawTeaCup];
     [self drawRecentTimers];
 
 }
@@ -112,21 +110,6 @@ uint _timerDuration;
     [stopButton addTarget:self action:@selector(stopTimer) forControlEvents:UIControlEventTouchUpInside];
     self.stopButton = stopButton;
     [self.view addSubview:stopButton];
-}
-
-- (void)displayRebrewButton
-{
-    if (!self.rebrewButton) {
-        UIButton *rebrewButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [rebrewButton setImage:[UIImage imageNamed:@"tea_icon"] forState:UIControlStateNormal];
-        rebrewButton.frame = CGRectMake(110, 265, 100, 50);
-        [rebrewButton addTarget:self action:@selector(rebrew) forControlEvents:UIControlEventTouchUpInside];
-        self.rebrewButton = rebrewButton;
-    }
-        
-    [self.view addSubview:self.rebrewButton];
-    
-    isRebrewDisplayed = YES;
 }
 
 - (void)updateTimerButtonEnabledStates
@@ -172,21 +155,26 @@ uint _timerDuration;
     }
 }
 
-- (void)startTimerWithDuration:(id)sender
+- (void)startTimerWithDuration:(NSUInteger)duration
 {
-    TYSTeaButton *button = (TYSTeaButton *)sender;
     if (![self.timer isRunning]) {
-        [self.timer setDuration:button.tag];
-        _timerDuration = button.tag;
+        [self.timer setDuration: duration];
+        _timerDuration = duration;
         [self.timer reset];
     } else {
-        [self.timer changeDurationWhileActiveWithDuration:button.tag];
-        _timerDuration = button.tag;
+        [self.timer changeDurationWhileActiveWithDuration:duration];
+        _timerDuration = duration;
     }
-    [self.settingsManager setCurrentDuration:button.tag];
+    [self.settingsManager setCurrentDuration:duration];
     
-//    [self drawRecentTimers];
     self.tempLabel.text = [TYSTimeStringFormatter timeStringWithSeconds:_timerDuration];
+   
+}
+
+- (void)startTimerWithDurationFromAction:(id)sender
+{
+    TYSTeaButton *button = (TYSTeaButton *)sender;
+    [self startTimerWithDuration: button.tag];
 
 }
 
@@ -214,27 +202,11 @@ uint _timerDuration;
 {
     CGRect buttonFrame = CGRectMake(15, 150, self.view.frame.size.width - 30, 180);
     
-//    TYSPushButton *button = [[TYSPushButton alloc] initWithFrame:buttonFrame];
     TYSButton *button = [[TYSButton alloc] initWithFrame:buttonFrame];
     [button addTarget:self action:@selector(toggleTimer) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
     [self configureTimerView];
-}
-
-- (void)drawTempLabel
-{
-    int labelWidth = 200;
-    CGRect labelFrame = CGRectMake(self.view.frame.size.width / 2 - labelWidth / 2, 50, labelWidth, 25);
-    UILabel *tempLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
-    tempLabel.textColor = [UIColor colorWithWhite:titleLabelWhite alpha:titleLabelOpacity];
-    tempLabel.backgroundColor = [UIColor clearColor];
-    tempLabel.text = [TYSTimeStringFormatter timeStringWithSeconds:_timerDuration];
-    tempLabel.textAlignment = NSTextAlignmentCenter;
-    
-    self.tempLabel = tempLabel;
-    [self.view addSubview:tempLabel];
 }
 
 - (void)drawTitleLabel
@@ -254,6 +226,21 @@ uint _timerDuration;
     [self.view addSubview:label];
 }
 
+- (void)drawTimerDurationLabel
+{
+    int labelWidth = 200;
+    CGRect labelFrame = CGRectMake(self.view.frame.size.width / 2 - labelWidth / 2, 50, labelWidth, 25);
+    UILabel *tempLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
+    tempLabel.textColor = [UIColor colorWithWhite:titleLabelWhite alpha:titleLabelOpacity];
+    tempLabel.backgroundColor = [UIColor clearColor];
+    tempLabel.text = [TYSTimeStringFormatter timeStringWithSeconds:_timerDuration];
+    tempLabel.textAlignment = NSTextAlignmentCenter;
+    
+    self.tempLabel = tempLabel;
+    [self.view addSubview:tempLabel];
+}
+
 - (void)drawTeaCup
 {
     CGRect viewFrame = self.view.frame;
@@ -262,7 +249,6 @@ uint _timerDuration;
     CGRect teaCupFrame = teaCupView.frame;
     teaCupFrame.origin.x = viewFrame.size.width / 2 - teaCupFrame.size.width / 2;
     teaCupFrame.origin.y = viewFrame.size.height - 15 - teaCup.size.height;
-//    teaCupFrame.origin.y = 15;
     teaCupView.frame = teaCupFrame;
     
     [self.view addSubview:teaCupView];
@@ -288,7 +274,7 @@ uint _timerDuration;
         teaButton = [[TYSTeaButton alloc] initWithFrame:teaCupFrame];
         [teaButton.teaCupLabel setText:[TYSTimeStringFormatter timeStringWithSeconds:time.intValue]];
         teaButton.tag = time.intValue;
-        [teaButton addTarget:self action:@selector(startTimerWithDuration:) forControlEvents:UIControlEventTouchUpInside];
+        [teaButton addTarget:self action:@selector(startTimerWithDurationFromAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:teaButton];
         [self.recentTimers addObject:teaButton];
     }
@@ -312,7 +298,6 @@ uint _timerDuration;
 
 - (void)didStopTimer:(TYSTimer *)timer
 {
-//    [self toggleStartStopButtons];
     self.timerLabel.textColor = [UIColor colorWithWhite:inactiveTimerWhite alpha:1.0f];
     [self updateTimerButtonEnabledStates];
 
@@ -346,9 +331,9 @@ uint _timerDuration;
     }
 
     [self drawRecentTimers];
+    
+    [self startTimerWithDuration: self.settingsManager.currentDuration];
 
-    _timerDuration = self.settingsManager.currentDuration;
-//    self.tempLabel.text = self.settingsManager.tempRangeString;
 }
 
 - (IBAction)dismissSettings:(id)sender

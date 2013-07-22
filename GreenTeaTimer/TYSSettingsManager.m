@@ -9,6 +9,8 @@
 #import "TYSSettingsManager.h"
 #import "TSPlistDataController.h"
 
+#define MAX_RECENT_TIMES 3
+
 @interface TYSSettingsManager ()
 
 @property (nonatomic, strong) TSPlistDataController *dataController;
@@ -127,7 +129,7 @@ static NSString *_fahrenheitString = @"170° - 185°";
         [recentTimes insertObject:number atIndex:0];
     } else {
         [recentTimes insertObject:number atIndex:0];
-        if (recentTimes.count == 4) {
+        if (recentTimes.count == MAX_RECENT_TIMES) {
             [recentTimes removeObjectAtIndex:3];
         }
     }
